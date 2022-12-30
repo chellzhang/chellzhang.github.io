@@ -22,6 +22,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+
     <!-- local CSS -->
     <link rel="stylesheet" href="./style.css" type="text/css">
 
@@ -46,10 +50,15 @@
         <!-- first page -->
         <section class="section active container-fluid bg">
             <div class="d-flex justify-content-center">
-                <div style="text-align: center;">
-                    <h1 id="greeting">Hi, there! I'm Chell<br>I build cool web apps</main>
-                    </h1>
+                <div class="textbox">
+                    <h1 id="greeting">Hi there,<br>I'm Chell!<br>I build cool web apps.</h1>
                     <a href="#see-my-work"><button class="btn btn-outline-dark">See my work</button></a>
+                </div>
+                <div class="linkbox">
+                    <a href="http://www.linkedin.com/in/chellzhang" target="_blank"><img src="./img/linkedin.svg"
+                            alt=""></a>
+                    <a href="https://github.com/chellzhang" target="_blank"><img src="./img/github.svg" alt=""></a>
+                    <a href="#"><img src="./img/file-text.svg" alt=""></a>
                 </div>
             </div>
         </section>
@@ -67,10 +76,8 @@
                         from product pages to multi-user interactive websites.</p>
                     <ul>
                         <li><strong>Prototyping</strong>: Figma,Adobe XD</li>
-                        <li><strong>Language</strong>: HTML, CSS, JavaScript</li>
-                        <li>
-                            <stong>Framework</stong>: jQueary, React.js, Bootstrap
-                        </li>
+                        <li><strong>Language</strong>: JavaScript, HTML, CSS</li>
+                        <li><strong>Framework</strong>: React.js, jQueary, Bootstrap</li>
                         <li><strong>Low/No-Code</strong>: Power App, Tableau </li>
                     </ul>
                 </article>
@@ -78,19 +85,19 @@
             <div class="container-sm d-flex flex-row-reverse">
                 <article class="col-md-5 m-2 skills-container">
                     <h2 class="skills-title">Back-end Skills</h2>
-                    <p>I am most proficient with the MERN stack and am familiar with other popular frameworks. When
+                    <p>I am most proficient with the PERN stack and am familiar with other popular frameworks. When
                         building back-end applications, I keep performance and scalability in mind.</p>
                     <ul>
-                        <li>Python，Django，Flask</li>
-                        <li>SQL, Firebase, MongoDB</li>
-                        <li>Node.js Express</li>
+                        <li>Node.js, Express</li>
+                        <li>PostgreSQL, Firebase</li>
+                        <li>Python, Django, Flask</li>
                     </ul>
                 </article>
             </div>
         </section>
 
         <!-- third page -->
-        <section class="section" id="see-my-work" style="background-color:#ecebe6">
+        <section class="section" id="see-my-work" style="background-color:#E8E7DF">
             <header class="banner">
                 <h2 class="works display-1">Recent Work</h2>
                 <div class="works-left"></div>
@@ -98,21 +105,32 @@
             <div class="slide-container swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-                            praesentium
-                            accusamus earum iure nesciunt!</p>
-                        <h3 class="prj-title h4">Jammming</h3>
-                        <img src="./img/jammming-thumbnail.png" alt="" class="card-img">
-                        <p class="date display-6">12/09</p>
+                        <a href="https://berryberry-jam.surge.sh/" target="_blank">
+                            <div class="linkwrap">
+                                <p class="description">This is a React App utilizes the Spotify API to allow users to
+                                    search
+                                    the Spotify library, create a custom playlist, then save it to their Spotify
+                                    account.
+                                </p>
+                                <h3 class="prj-title h4">Spotify API</h3>
+                                <img src="./img/jammming-thumbnail - Copy.png" alt="" class="card-img">
+                                <p class="date display-6">12/09</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="swiper-slide">
-                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-                            praesentium
-                            accusamus earum iure nesciunt!</p>
-                        <h3 class="prj-title h4">Yelp API</h3>
-                        <a href="http://www.codecademy.com" target="_blank"><img src="./img/ravenous-thumbnail.png" alt="" class="card-img"></a>
-                        <p class="date display-6">12/04</p>
+                        <a href="https://dainty-melba-b3fdd8.netlify.app/" target="_blank">
+                            <div class="linkwrap">
+                                <p class="description">This is a Yelp-like webpage that makes requests to the Yelp API
+                                    and displays the results sorted in different ways according to the user's choice.
+                                </p>
+                                <h3 class="prj-title h4">Yelp API</h3>
+                                <img src="./img/ravenous-thumbnail - Copy.png" alt="" class="card-img">
+                                <p class="date display-6">12/04</p>
+                            </div>
+                        </a>
                     </div>
+
                     <div class="swiper-slide">
                         <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
                             praesentium
@@ -177,11 +195,12 @@
                         <button type="submit" class="btn btn-outline-dark btn-lg">Send</button>
                     </form>
                 </div>
-                <footer class="footer">
+                <!-- <footer class="footer">
                     <a href="https://www.linkedin.com/" target="_blank"><img src="./img/linkedin-square-logo.png"></a>
                     <img src="./img/chell.png">
-                    <a href="https://github.com/" target="_blank"><img src="./img/github-logo-silhouette-in-a-square.png"></a>
-                </footer>
+                    <a href="https://github.com/" target="_blank"><img
+                            src="./img/github-logo-silhouette-in-a-square.png"></a>
+                </footer> -->
             </div>
         </section>
     </div>
