@@ -5,19 +5,23 @@
     height: 100vh;
 }
 
-.textbox{
+#greeting-box{
     border: solid 5px #fff;
     padding: 50px 75px;
 }
 
-#greeting {
+#greeting-box h1 {
     font-family: 'Nuosu SIL', serif;
     /* font-size: 3.5rem; */
     color: #878C80;
     max-width: 700px;
     /* text-align: center; */
     text-align: left;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
+}
+
+#greeting-box button{
+    margin-top: 15px;
 }
 
 .linkbox{
