@@ -78,8 +78,10 @@
     padding: 25px;
     font-family: Poppins, sans-serif;
     display: flex;
-    flex-direction:column-reverse;
-    color:#79776B
+    flex-direction:column;
+    color:#79776B;
+    padding-top: 10vh;
+
 }
 
 .swiper-slide a{
@@ -122,10 +124,6 @@
 
 .description{
     margin-bottom: 15px;
-}
-
-.swiper-slide button{
-    margin-bottom: 50px;
 }
 
 body{

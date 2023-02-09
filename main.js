@@ -2,8 +2,8 @@ $(document).ready(function () {
   $('#fullpage').fullpage({
     licenseKey: 'gplv3-license'
   });
-  ScrollReveal().reveal('#greeting-box h1',{ delay: 300, origin:'bottom', distance: '10px', interval: 300, duration: 1500 });
-  ScrollReveal().reveal('.linkbox a', {delay:1500, origin:'right', distance: '10px',interval: 500})
+  ScrollReveal().reveal('#greeting-box h1',{ delay: 200, origin:'bottom', distance: '10px', interval: 300, duration: 1500 });
+  ScrollReveal().reveal('.linkbox a', {delay:800, origin:'right', distance: '10px',interval: 500})
 });
 
 (function() {
