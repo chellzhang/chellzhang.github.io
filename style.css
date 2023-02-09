@@ -110,7 +110,7 @@
 
 .card-img{
     width: 100%;
-    height:200px;
+    height:250px;
     object-fit: cover;
     margin: 10px 0;
 }
@@ -121,9 +121,12 @@
 }
 
 .description{
-    margin-bottom: 75px;
+    margin-bottom: 15px;
 }
 
+.swiper-slide button{
+    margin-bottom: 50px;
+}
 
 body{
     scroll-behavior: smooth;
@@ -150,17 +153,4 @@ body{
     border-radius: 50px 50px 0 0;
     background-color:  rgba(255,255,255, 35%);
     font-family: Poppins, sans-serif;
-}
-
-.footer{
-    position:absolute;
-    display: flex;
-    justify-content: space-between;
-    bottom:0;
-    width: 50vw;
-    height: 40px;
-}
-
-.footer img{
-    height:40px;
 }

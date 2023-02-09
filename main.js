@@ -5,8 +5,8 @@ $(document).ready(function () {
 });
 
 var swiper = new Swiper(".slide-container", {
-  slidesPerView: 5,
-  initialSlide: 1,
+  slidesPerView: 4,
+  initialSlide: 0,
   spaceBetween: 0,
   centeredSlides: true,
   pagination: {
