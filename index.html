@@ -63,6 +63,9 @@
     <!-- link scrollreveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
+
+
+
 </head>
 
 <body>
@@ -131,7 +134,8 @@
 
                     <!-- bday countdown -->
                     <div class="swiper-slide">
-                        <a href="https://github.com/chellzhang/bday-countdown" target="_blank"> <button class="btn btn-outline-dark">Code</button></a>
+                        <a href="https://github.com/chellzhang/bday-countdown" target="_blank"> <button
+                                class="btn btn-outline-dark">Code</button></a>
                         <a href="https://dry-children.surge.sh" target="_blank">
                             <div class="linkwrap">
                                 <p class="description">This is a little login/registration component that uses
@@ -174,8 +178,10 @@
                                 class="btn btn-outline-dark">Code</button></a>
                         <a href="https://dainty-melba-b3fdd8.netlify.app/" target="_blank">
                             <div class="linkwrap">
-                                <p class="description">This is a Yelp-like webpage that can display a list of businesses based on user's search input. 
-                                    It makes requests to the Yelp API and can display the results by best matching, by highest rating, or by most reviewed according to the user's choice.
+                                <p class="description">This is a Yelp-like webpage that can display a list of businesses
+                                    based on user's search input.
+                                    It makes requests to the Yelp API and can display the results by best matching, by
+                                    highest rating, or by most reviewed according to the user's choice.
                                 </p>
                                 <h3 class="prj-title h4">Yelp API</h3>
                                 <img src="./img/ravenous-thumbnail - Copy.png" alt="ravenous app screenshot"
@@ -215,27 +221,34 @@
             <div class="wrapper">
                 <div class="form-wrapper col-md-6">
                     <h2 style="font-family: 'Nuosu SIL', serif;">Send me a message!</h2>
-                    <form action="mailto:chaogogogo@gmail.com" enctype="text/plain">
+                    <p>&#128075 If you stumble across my portfolio site, feel free to leave a comment or just say "Hi~". I look forward to hearing from you!</p>
+                    
+                    <form id="contact-form">
+                        <input type="hidden" name="contact_number">
                         <div class="row gx-3">
                             <div class="mb-3 col-md-6">
                                 <label for="inputName" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="inputName">
+                                <input type="text" class="form-control" id="inputName" name="visitor_name">
                             </div>
                             <div class="mb-3 col-md-6">
                                 <label for="inputEmail" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="inputEmail">
+                                <input type="email" class="form-control" id="inputEmail" name="visitor_email" placeholder="(optional)">
                             </div>
                         </div>
                         <div class="mb-3 extra-info">
                             <label for="extra">Message</label>
-                            <textarea class="form-control" id="extra" name="extra" rows="4"></textarea>
+                            <textarea class="form-control" id="extra" id="extra" name="message" rows="4"></textarea>
                         </div>
                         <button type="submit" class="btn btn-outline-dark btn-lg">Send</button>
                     </form>
+
                 </div>
             </div>
         </section>
     </div>
+
+    <!-- link email.js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
 
     <!-- run local main.js -->
