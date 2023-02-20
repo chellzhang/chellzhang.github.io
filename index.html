@@ -161,7 +161,7 @@
                                     with either a countdown to his birthday or a random quote fetched from the type.fit
                                     API.</p>
                                 <h3 class="prj-title h4">B-day countdown</h3>
-                                <img src="./img/bdaycountdown.gif" alt="birthdayday countdown gif" class="card-img"
+                                <img src="./img/countdown50.gif" alt="birthdayday countdown gif" class="card-img"
                                     style="background-color: lightgrey">
                                 <p class="date display-6">01/11</p>
                             </div>
@@ -202,7 +202,7 @@
                                     highest rating, or by most reviewed according to the user's choice.
                                 </p>
                                 <h3 class="prj-title h4">Yelp API</h3>
-                                <img src="./img/ravenous-thumbnail - Copy.png" alt="ravenous app screenshot"
+                                <img src="./img/ravenous50.gif" alt="ravenous app screenshot"
                                     class="card-img">
                                 <p class="date display-6">12/04</p>
                             </div>
@@ -243,7 +243,7 @@
                         <div class="row gx-3">
                             <div class="mb-3 col-md-6">
                                 <label for="inputName" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="inputName" name="visitor_name">
+                                <input type="text" class="form-control" id="inputName" name="visitor_name" required>
                             </div>
                             <div class="mb-3 col-md-6">
                                 <label for="inputEmail" class="form-label">Email address</label>
@@ -253,12 +253,17 @@
                         </div>
                         <div class="mb-3 extra-info">
                             <label for="extra">Message</label>
-                            <textarea class="form-control" id="extra" id="extra" name="message" rows="4"></textarea>
+                            <textarea class="form-control" id="extra" id="extra" name="message" rows="4" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-outline-dark btn-lg">Send</button>
                     </form>
-
                 </div>
+            </div>
+            <div class="popup col-md-3" id="popup">
+                <img src="./img/tick.png" alt="tick-icon">
+                <h2 class="m-4">Thank you!</h2>
+                <p class="m-3">Your message has been successfully sent.</p>
+                <button type="button" class="btn btn-dark" onclick="closePopup()">OK</button>
             </div>
         </section>
     </div>

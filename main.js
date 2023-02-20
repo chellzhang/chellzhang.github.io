@@ -6,6 +6,15 @@ $(document).ready(function () {
   ScrollReveal().reveal('.linkbox a', {delay:800, origin:'right', distance: '10px',interval: 500})
 });
 
+function openPopup(){
+  $('#popup').addClass("open-popup")
+}
+
+function closePopup(){
+  $('#popup').removeClass("open-popup")
+  document.getElementById('contact-form').reset()
+}
+
 (function() {
   emailjs.init('rIOs5_3AhoxfpSpmS');
 })()
@@ -19,6 +28,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
       }, function(error) {
           console.log('FAILED...', error);
       });
+  openPopup()
 });
 
 var swiper = new Swiper(".slide-container", {
