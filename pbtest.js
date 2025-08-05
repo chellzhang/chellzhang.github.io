@@ -1,6 +1,6 @@
 {
-  "PB coaching":"Beyond the Basics: Power BI Like a Pro",
+  "PB coaching":"Excel",
   "PB coaching link":"http://www.google.com",
-  "TotW":"Use Dictate and Read Aloud",
+  "TotW":"Outlook",
   "TotW link":"https://app.brainstorminc.com/discover/flows/471253"
 }
