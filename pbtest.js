@@ -1,6 +1,6 @@
 {
-  "PB coaching":"Beyond the Basics: Power BI Like a Pro",
+  "PB coaching":"Cloud Control- Take the Reins with OneDrive",
   "PB coaching link":"http://www.google.com",
-  "TotW":"Rethink How You Send Attachments",
+  "TotW":"Insert Data from Pictures",
   "TotW link":"https://app.brainstorminc.com/discover/flows/471253"
 }
